@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="google-site-verification" content="-Y1z6vNaCwmXCpSyO2p6ZzjnI2Q59mdU94yQ7PeZ-xY" />
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Roman Sintsov, operator of Verdura owner automation. Application information, privacy policy and contact.">
+  <link rel="canonical" href="https://roman-sintsov.github.io/">
+  <title>Roman Sintsov</title>
+  <style>
+    /* A compact operator homepage connecting domain ownership to the existing application pages. */
+    :root {
+      color-scheme: light;
+      --bg: #f3f7f2;
+      --paper: #ffffff;
+      --ink: #182d23;
+      --muted: #4f6357;
+      --accent: #225c3c;
+      --line: #ccd9cf;
+      --font-display: "Trebuchet MS", "Segoe UI", sans-serif;
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg: #141e18;
+        --paper: #1c2921;
+        --ink: #eaf1e9;
+        --muted: #c1cfc1;
+        --accent: #b0dab8;
+        --line: #405044;
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #141e18;
+      --paper: #1c2921;
+      --ink: #eaf1e9;
+      --muted: #c1cfc1;
+      --accent: #b0dab8;
+      --line: #405044;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.7 var(--font-body); overflow-wrap: anywhere; }
+    .page { max-width: 48rem; margin-inline: auto; padding-block: 2.5rem 3rem; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+    main, section, footer { display: grid; gap: 1rem; min-width: 0; }
+    main { gap: 2rem; }
+    h1, h2, p { margin: 0; }
+    h1, h2 { font-family: var(--font-display); text-wrap: balance; }
+    h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; }
+    h2 { font-size: 1.3rem; line-height: 1.4; }
+    .lede { max-width: 64ch; color: var(--muted); font-size: 1.12rem; }
+    a { color: var(--accent); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    ul { margin: 0; padding-inline-start: 1.3rem; display: grid; gap: 0.75rem; }
+    section { border-top: 1px solid var(--line); padding-block: 1.5rem 0; }
+    .contact { background: var(--paper); border: 1px solid var(--line); padding: 1.1rem; }
+    footer { margin-top: 2rem; border-top: 1px solid var(--line); padding-block: 1.25rem 0; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <div>
+        <h1>Roman Sintsov</h1>
+        <p class="lede">Operator of Verdura owner automation.</p>
+      </div>
+      <p>Verdura owner automation supports authorized administration of configured Google Sheets catalog data and the store’s order workflow. Google authorization is used by the tool’s operator; customers do not need to grant these permissions.</p>
+      <section aria-labelledby="application">
+        <h2 id="application">Application information</h2>
+        <p>The application pages explain its purpose, Google permissions, use of data and privacy contact.</p>
+        <ul>
+          <li><a href="https://roman-sintsov.github.io/verdura-legal/owner-automation/">Verdura owner automation</a></li>
+          <li><a href="https://roman-sintsov.github.io/verdura-legal/owner-automation/privacy/">Owner-automation privacy policy</a></li>
+        </ul>
+      </section>
+      <section class="contact" aria-labelledby="contact">
+        <h2 id="contact">Support and privacy contact</h2>
+        <p>Roman Sintsov<br><a href="mailto:mainsource.me@gmail.com">mainsource.me@gmail.com</a></p>
+        <p>Do not send Google passwords, OAuth codes or access credentials in a support request.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Static information page. No sign-in form or analytics are included.</p>
+    </footer>
+  </div>
+</body>
+</html>
